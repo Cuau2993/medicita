@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @room.email %>
+</p>
+
+<p>
+  <strong>Cellphone:</strong>
+  <%= @room.cellphone %>
+</p>
+
+<p>
+  <strong>Minprice:</strong>
+  <%= @room.minprice %>
+</p>
+
+<p>
+  <strong>Open:</strong>
+  <%= @room.open %>
+</p>
+
+<p>
+  <strong>Close:</strong>
+  <%= @room.close %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @room.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @room.longitude %>
+</p>
+
+<%= link_to 'Edit', edit_room_path(@room) %> |
+<%= link_to 'Back', rooms_path %>

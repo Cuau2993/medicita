@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
+  #root 'home#index'
+
   devise_for :patients
   devise_for :rooms
-  devise_for :doctors
+  devise_for :doctors, controllers: {
+    registrations: 'doctors/registrations'
+  }
 
   resources :doctors
   resources :rooms
